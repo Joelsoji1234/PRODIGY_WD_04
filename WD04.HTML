@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .project {
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            margin-top: 5px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <div class="content">
+            <img src="C:\Users\HP\Documents\PROFILE.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Hello, I'm Joel Soji</h1>
+            <p>Web Developer | Designer | Programmer</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Joel Soji, a passionate web developer with a strong foundation in creating dynamic and responsive web applications. I specialize in front-end development, utilizing technologies such as HTML, CSS, JavaScript, and React to build user-friendly interfaces.</p>
+        <p>Even as a student, I have had the opportunity to work on several successful projects, where I have collaborated with cross-functional teams to deliver high-quality software solutions. My educational journey has provided me with a solid understanding of core concepts in computer science, which I apply to my work in web development. I specialize in front-end development, utilizing technologies such as HTML, CSS, JavaScript, and React to build user-friendly interfaces.</p>
+        <p>Currently doing my UG Degree in BCA at Christ University, Bangalore.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>OLMS</h3>
+            <p>As part of a comprehensive Database Management Systems (DBMS) project, our team developed an Online Learning Management System (OLMS) platform utilizing React for the front-end and AWS for the back-end infrastructure. This platform was designed to streamline the process of course management, offering features such as user authentication, course creation, and content delivery. Leveraging React's component-based architecture allowed for a dynamic and responsive user interface, enhancing the overall user experience. AWS services, including Amazon RDS for database management and AWS Lambda for serverless computing, provided a robust and scalable back-end solution. This project not only demonstrated my ability to integrate modern web development frameworks with cloud services but also reinforced my skills in database design, system architecture, and full-stack development.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joel Soji. All rights reserved.</p>
+    </footer>
+    
+    <script src="WD4.JS"></script>
+</body>
+</html>
+
